@@ -4,4 +4,4 @@ description: Introduction of unit 1. Get started on creating your first sentence
 unit: 1
 ---
 
-In unit 1 you will learn how to form sentences in Korean.
+In unit 1 you will learn how to form sentences in Korean. The basics needed to have a conversation.
