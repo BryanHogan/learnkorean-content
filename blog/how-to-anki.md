@@ -71,7 +71,7 @@ The official Anki Manual has a [page explaining how to setup syncing](https://do
 Flashcards are great for low-order learning, but not for high-order learning. Low-order learning involves memorization and recall, whereas high-order learning requires deeper understanding, critical thinking, and application.
 
 Don't spend the majority of your time just repeating flashcards, use other learning methods as well.  
-Also don't feel like you are forced to use Anki if you don't enjoy it. Give Anki a chance, but after trying multiple times it's okay to not use it or to take breaks from it. There are many polyglots (a person who speaks multiple languages) that successfully learned without using a tool such as Anki.
+Also don't feel like you are forced to use Anki if you don't enjoy it. Give Anki a chance and try to find a good balance for you. Keep in mind if the only thing Anki is doing for you is making your language learning journey unenjoyable, that you can always stop using it. There are many possible ways to learn a language, Anki doesn't have to be included in that or can just be a small part of it.
 
 There are a few common traps you can fall into when using Anki.
 
