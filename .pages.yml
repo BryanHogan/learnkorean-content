@@ -1,0 +1,117 @@
+# .pages.yml — PagesCMS config for learnkorean-content
+
+# Where uploaded images/files should live in this repo and how they resolve on the site.
+# Adjust these if your repo uses different folders (e.g. /public or /static).
+media:
+  - name: images
+    label: Images
+    input: public/media
+    output: /media
+    categories: [image]
+  - name: files
+    label: Files
+    input: public/files
+    output: /files
+    categories: [document, audio, video, compressed]
+
+# Content types editable in PagesCMS
+content:
+  - name: docs
+    label: Chapters
+    type: collection
+    path: src/content/docs
+    # Use simple filenames (no date prefix) and allow nested folders.
+    filename: "{primary}.md"
+    subfolders: true
+    format: yaml-frontmatter
+    # Great for Starlight docs: show folders as a collapsible tree and treat index.md as folder node.
+    view:
+      layout: tree
+      node:
+        filename: index.md
+        hideDirs: all
+      # What you see in the list columns and how it sorts/searches.
+      fields: [title, "sidebar.label", "sidebar.order", lastUpdated, draft]
+      primary: title
+      sort: [ "sidebar.order", title ]
+      search: [ title, description ]
+      default:
+        sort: "sidebar.order"
+        order: asc
+    fields:
+      # --- Starlight frontmatter ---
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: sidebar
+        label: Sidebar (Starlight)
+        type: object
+        fields:
+          - name: label
+            label: Link label
+            type: string
+          - name: order
+            label: Order (lower shows higher)
+            type: number
+          - name: badge
+            label: Badge
+            type: object
+            fields:
+              - name: text
+                label: Text
+                type: string
+              - name: variant
+                label: Variant
+                type: select
+                options: [tip, note, caution, danger]
+      - name: lastUpdated
+        label: Last updated
+        type: date
+      - name: draft
+        label: Draft (don’t publish yet)
+        type: boolean
+      # Optional Starlight hero (handy for section landing pages)
+      - name: hero
+        label: Hero (optional)
+        type: object
+        fields:
+          - name: title
+            label: Hero title
+            type: string
+          - name: tagline
+            label: Tagline
+            type: text
+          - name: image
+            label: Image
+            type: image
+            media: images
+      # --- Markdown body ---
+      - name: body
+        label: Content
+        type: rich-text
+        # Let authors insert images/files from the media library into markdown
+        media: images
+
+# Reusable field groups (you can expand later if needed)
+components:
+  sidebarBadge:
+    label: Sidebar Badge
+    type: object
+    fields:
+      - name: text
+        label: Text
+        type: string
+      - name: variant
+        label: Variant
+        type: select
+        options: [tip, note, caution, danger]
+
+# Optional: keep hidden the PagesCMS Settings screen & preserve unknown frontmatter on save
+settings:
+  hide: false
+  content:
+    merge: true
