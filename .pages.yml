@@ -16,10 +16,10 @@ media:
 
 # Content types editable in PagesCMS
 content:
-  - name: docs
+  - name: chapter
     label: Chapters
     type: collection
-    path: src/content/docs
+    path: chapter
     # Use simple filenames (no date prefix) and allow nested folders.
     filename: "{primary}.md"
     subfolders: true
