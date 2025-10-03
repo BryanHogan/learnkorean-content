@@ -1,3 +1,17 @@
+# .pages.yml — PagesCMS config for learnkorean-content
+
+media:
+  - name: images
+    label: Images
+    input: public/media
+    output: /media
+    categories: [image]
+  - name: files
+    label: Files
+    input: public/files
+    output: /files
+    categories: [document, audio, video, compressed]
+
 content:
   - name: chapter
     label: Chapters
@@ -28,3 +42,27 @@ content:
         options:
           language: markdown
         media: images
+
+
+components:
+  sidebarBadge:
+    label: Sidebar Badge
+    type: object
+    fields:
+      - name: text
+        label: Text
+        type: string
+      - name: variant
+        label: Variant
+        type: select
+        options:
+          values:
+            - { label: Tip,     value: tip }
+            - { label: Note,    value: note }
+            - { label: Caution, value: caution }
+            - { label: Danger,  value: danger }
+
+settings:
+  hide: false
+  content:
+    merge: true
