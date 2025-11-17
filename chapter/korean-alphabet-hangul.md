@@ -18,7 +18,7 @@ Or for "mu": 무
 Don't try to represent Korean words in romanized letters (the English alphabet). It is not possible to accurately represent Korean words with letters this way. Understanding Hangul is the fundamental first step to mastering Korean.
 
 ## Basic Consonants
-The basic consonants of Hangul are: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ
+The basic consonants of Hangul are: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ
 
 - ㄱ = k/g
 - ㄴ = n
