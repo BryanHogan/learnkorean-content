@@ -64,6 +64,8 @@ When we create a new card we can see the option `basic` at the top left, click t
 
 Most cards you create will either be `Basic` or `Basic (and reversed card)`. The `Basic (type in the answer)` is also nice, here you will be prompted to type in the answer of your card when you see it.
 
+I highly recommend to study vocabulary (e.g. [TTMIK's First 500 Korean Words by Retro](https://ankiweb.net/shared/info/1551455917)) in `Basic and reversed`.
+
 ### Synching across devices
 The official Anki Manual has a [page explaining how to setup syncing](https://docs.ankiweb.net/syncing.html). But you only really need to create an Anki account. Then log into that account on the devices you want to study Anki on and then let the synchronisation run.
 
